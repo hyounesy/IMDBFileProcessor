@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 """
-Example usage of IMDBFileProcessor
-data files should be downloaded from http://www.imdb.com/interfaces
-and extracted to the data_directory
+Example usage of IMDBFileProcessor.
+Data files should be downloaded from http://www.imdb.com/interfaces
+and extracted to the data_path
 """
 
 from IMDBFileProcessor import IMDBFileProcessor
@@ -16,7 +16,7 @@ __maintainer__ = "Hamid Younesy"
 
 
 data_path = "~/imdb/ftp.fu-berlin.de/pub/misc/movies/database/"
-output_path = "data/"
+output_path = "output/"
 
 file_processor = IMDBFileProcessor(data_path)
 file_processor.read_movies()    # requires "movies.list"

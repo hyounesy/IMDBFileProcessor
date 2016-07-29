@@ -19,7 +19,7 @@ wget -r -np -l 1 ftp://ftp.fu-berlin.de/pub/misc/movies/database/
 from IMDBFileProcessor import IMDBFileProcessor
 
 data_path = "~/imdb/ftp.fu-berlin.de/pub/misc/movies/database/"
-output_path = "data/"
+output_path = "output/"
 
 file_processor = IMDBFileProcessor(data_path)
 file_processor.read_movies()    # requires "movies.list"
