@@ -50,3 +50,9 @@ A processed output in tab delimited format can be dowloaded from [output](output
 ## Example Analysis
 
 ![Correlation](analysis/imdb_corr_heatmap.png)
+Some preliminary insights:
+
+  - Clusters of (Mystery, Thriller), (Family, Animation, Short), (Sci_Fi, Fantasy), (History, Biograpgy, Documentary), (Action, Adventure), (Drama, Romance), (History, War), (History, Drama)
+  - "rating" is positively correlated with the "length", and negatively correlated with "Short" movies genres.
+  - Movies with high revenues get more votes. Short movies tend to get less votes than other genres.
+  - but no significant correlation between revenue and rating.
