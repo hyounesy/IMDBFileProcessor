@@ -1,14 +1,23 @@
 # IMDBFileProcessor
 
-A python module to parse the IMDB plain text data files into a python dict and writing them out as a text data table.
+A python module to parse the public IMDB plain text data files into a python dict. Also functionality to write them out as a text data table.
 
-## Data
-Data files should be downloaded from the [IMDB ftp site] (http://www.imdb.com/interfaces).
+## Requirements
+python 2.x or 3.x (recommended)
 
-A processed output in tab delimited format can be dowloaded from [output](output/).
+## Getting the Data
+Data files should be downloaded from the IMDB [FTP servers] (http://www.imdb.com/interfaces). For example 
+```bash
+wget -r -np -l 1 ftp://ftp.fu-berlin.de/pub/misc/movies/database/
+```
+
+(The entire files will take about 7GB after extracted).
 
 ## Example Usage
+
 ```python
+from IMDBFileProcessor import IMDBFileProcessor
+
 data_path = "~/imdb/ftp.fu-berlin.de/pub/misc/movies/database/"
 output_path = "data/"
 
@@ -35,6 +44,9 @@ file_processor.save_to_table(
                          if genre not in ['Adult'] and count > 1000]
 )
 ```
+
+A processed output in tab delimited format can be dowloaded from [output](output/).
+
 ## Example Analysis
 
 ![Correlation](analysis/imdb_corr_heatmap.png)
