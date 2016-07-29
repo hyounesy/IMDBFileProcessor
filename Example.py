@@ -15,8 +15,8 @@ __version__ = "1.0.1"
 __maintainer__ = "Hamid Younesy"
 
 
-data_path = "/Users/hyounesy/Downloads/imdb/ftp.fu-berlin.de/pub/misc/movies/database/"
-output_path = "/Users/hyounesy/Downloads/"
+data_path = "~/imdb/ftp.fu-berlin.de/pub/misc/movies/database/"
+output_path = "data/"
 
 file_processor = IMDBFileProcessor(data_path)
 file_processor.read_movies()    # requires "movies.list"

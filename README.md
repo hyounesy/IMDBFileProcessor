@@ -37,4 +37,4 @@ file_processor.save_to_table(
 ```
 ## Example Analysis
 
-![Correlation](analysis/imdb_corr_heatmap.svg)
+![Correlation](analysis/imdb_corr_heatmap.png)
